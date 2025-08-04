@@ -1,0 +1,369 @@
+/* Theme Toggle Styles */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 100;
+    color: #333;
+    transition: color 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.theme-toggle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.theme-toggle.dark {
+    color: #ffd700;
+    background: #232526;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background: linear-gradient(135deg, #1b640c 0%, #0d2660 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.todo-card {
+    background: linear-gradient(135deg, #0a6a90 0%, #5a0073 100%);
+    box-shadow: 0 4px 16px 0 rgb(0, 135, 255);;
+    border-radius: 16px;
+    padding: 18px 12px 12px 12px;
+    margin-bottom: 0;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 180px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.footer.dark-mode {
+    background: rgba(30,30,30,0.95);
+    color: #bbb;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+}
+
+h1.dark-mode, .list-title.dark-mode {
+    color: #eee;
+    text-shadow: 1px 1px 8px #2227;
+}
+
+#todo-list-incomplete li.dark-mode, #todo-list-completed li.dark-mode {
+    background: #232526;
+    color: #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+
+#todo-list-incomplete li.completed.dark-mode, #todo-list-completed li.completed.dark-mode {
+    color: #ffffff;
+    background: #333;
+}
+
+.delete-btn.dark-mode {
+    background: linear-gradient(90deg, #ff5858 0%, #232526 100%);
+    color: #fff;
+}
+
+.delete-btn.dark-mode:hover {
+    background: linear-gradient(90deg, #232526 0%, #64b402 100%);
+}
+/* Footer copyright */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 10px 0 8px 0;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+#todo-input {
+    flex: 2;
+    min-width: 120px;
+}
+
+.todo-time {
+    flex: 1;
+    padding: 10px 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 16px;
+    background: #f7f7f7;
+}
+
+.todo-lists {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+    flex: 1;
+}
+
+.todo-card {
+    background: linear-gradient(135deg, #00328f 0%, #4d0578 100%);
+    box-shadow: 0 4px 16px 0 rgb(0, 135, 255);;
+    border-radius: 16px;
+    padding: 18px 12px 12px 12px;
+    margin-bottom: 0;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 0;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.todo-card {
+    background: linear-gradient(135deg, #002872 0%, #380572 100%);
+    box-shadow: 0 4px 16px 0 rgb(0, 135, 255);;
+    border-radius: 16px;
+    padding: 18px 12px 12px 12px;
+    margin-bottom: 0;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1 1 180px;
+    max-width: 100%;
+}
+
+.list-title {
+    font-size: 1.15em;
+    color: #ffffff;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 600;
+    /* text-shadow: 1px 1px 4px #fff7; */
+}
+
+.todo-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.todo-lists > div {
+    flex: auto;
+    min-width: 150px;
+}
+
+.list-title {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px #fff7;
+}
+
+#todo-list-incomplete li, #todo-list-completed li {
+    background: #08b3a5;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    transition: box-shadow 0.2s;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#todo-list-incomplete li span, #todo-list-completed li span {
+    word-break: break-word;
+    max-width: 60%;
+    min-width: 0;
+}
+
+#todo-list-incomplete li .delete-btn, #todo-list-completed li .delete-btn {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 20px 8px;
+        max-width: calc(100vw - 20px);
+        width: calc(100vw - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+        min-height: 80vh;
+    }
+    .todo-lists {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        flex: 1;
+    }
+    .todo-card {
+        min-width: 0;
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    .todo-input {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    #todo-input, .todo-time, #add-btn {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    #todo-list-incomplete li, #todo-list-completed li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 10px 10px;
+    }
+    #todo-list-incomplete li .delete-btn, #todo-list-completed li .delete-btn {
+        margin-left: 0;
+        align-self: flex-end;
+    }
+    #todo-list-incomplete li span, #todo-list-completed li span {
+        max-width: 100%;
+    }
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 8px #fff7;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 16px;
+}
+
+#add-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67,233,123,0.15);
+    transition: background 0.2s;
+}
+
+#add-btn:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    background: #fff;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: box-shadow 0.2s;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    background: #e0e0e0;
+}
+
+.delete-btn {
+    background: linear-gradient(90deg, #a90101 0%, #f6183d 100%);
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(255,88,88,0.10);
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(90deg, #f76d80 0%, #e11212 100%);
+}

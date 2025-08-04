@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Website</title>
+    <link rel="stylesheet" href="TodoStyle.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">
+            <span id="theme-icon">&#9788;</span>
+        </button>
+        <h1>My Todo List</h1>
+        <div class="todo-input">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <input type="time" id="todo-time" class="todo-time" value="">
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="todo-lists">
+            <div class="todo-card">
+                <h2 class="list-title">Upcoming Tasks</h2>
+                <ul id="todo-list-incomplete"></ul>
+            </div>
+            <div class="todo-card">
+                <h2 class="list-title">Completed Tasks</h2>
+                <ul id="todo-list-completed"></ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 Pawan Gujar. All rights reserved.</footer>
+    <script src="TodoScript.js"></script>
+</body>
+</html>
