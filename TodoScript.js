@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const timeSpan = document.createElement('span');
             timeSpan.textContent = todo.time;
             timeSpan.style.marginLeft = '10px';
-            timeSpan.style.color = '#888';
+            timeSpan.style.color = 'white';
             li.appendChild(timeSpan);
         }
         if (isCompleted) li.classList.add('completed');
@@ -134,3 +134,4 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('todos', JSON.stringify(todos));
     }
 });
+
