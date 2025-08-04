@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function addTodo() {
+        console.log('Add button clicked');
         const value = input.value.trim();
         const time = timeInput.value;
         if (!value) return;
