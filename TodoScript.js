@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         footer.classList.toggle('dark-mode', isDark);
         h1.classList.toggle('dark-mode', isDark);
         listTitles.forEach(t => t.classList.toggle('dark-mode', isDark));
-        themeIcon.innerHTML = isDark ? '<span style="font-size:28px;">&#9790;</span>' : '<span style="font-size:28px;">&#9788;</span>';
+        themeIcon.textContent = isDark ? '\u263D' : '\u263C';
         if (isDark) {
             themeToggle.classList.add('dark');
         } else {
@@ -87,8 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const li = createTodoElement(todo, idx, true);
             listCompleted.appendChild(li);
         });
-        // Update theme for new items
-        setTheme(darkMode);
+        // Do not call setTheme here; theme is handled on page load and toggle only
     }
 
     function createTodoElement(todo, idx, isCompleted) {
